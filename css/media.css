@@ -1,0 +1,420 @@
+@media (min-width: 1051px) {
+  .sidebar {
+    position: fixed;
+    left: auto;
+    width: 250px;
+    height: calc(100vh - 24px);
+    padding: 24px 14px;
+    margin-right: 80px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  body > #navbar,
+  body > #summary-cards,
+  body > #dashboard,
+  body > #dashboard-details {
+    width: auto;
+    margin-right: 330px;
+    margin-left: 0;
+  }
+
+  body > #navbar .container,
+  body > #summary-cards .container,
+  body > #dashboard .container,
+  body > #dashboard-details .container {
+    width: 100%;
+    max-width: none;
+    padding-inline: 20px;
+  }
+
+  .cards-parent {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .dashboard-grid {
+    grid-template-columns: minmax(0, 1.8fr) minmax(280px, 0.9fr);
+    gap: 16px;
+    direction: ltr;
+  }
+
+  .transactions {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .right-widgets {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .lower-dashboard-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .payment-methods {
+    grid-column: 1;
+  }
+
+  .middle-dashboard-column {
+    grid-column: 2;
+  }
+
+  .budget-overview {
+    grid-column: 3;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1050px) {
+  .sidebar {
+    position: fixed;
+    left: auto;
+    width: 68px;
+    height: calc(100vh - 24px);
+    padding: 16px 8px;
+    gap: 18px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .sidebar-brand {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    padding: 0 0 12px;
+  }
+
+  .sidebar-brand-info,
+  .sidebar-link span:last-child,
+  .sidebar-section-title,
+  .sidebar-action span:last-child,
+  .sidebar-divider {
+    display: none;
+  }
+
+  .sidebar-nav {
+    gap: 8px;
+  }
+
+  .sidebar-link {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    padding: 10px 4px;
+  }
+
+  .sidebar-link-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sidebar-link-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .sidebar-quick-actions {
+    gap: 8px;
+  }
+
+  .sidebar-action {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    padding: 5px 2px;
+  }
+
+  .quick-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  body > #navbar,
+  body > #summary-cards,
+  body > #dashboard,
+  body > #dashboard-details {
+    width: auto;
+    margin-right: 92px;
+    margin-left: 0;
+  }
+
+  body > #navbar .container,
+  body > #summary-cards .container,
+  body > #dashboard .container,
+  body > #dashboard-details .container {
+    width: 100%;
+    max-width: none;
+    padding-inline: 12px;
+  }
+
+  .cards-parent {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .cards:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .transactions,
+  .right-widgets {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .lower-dashboard-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .payment-methods {
+    grid-column: 1;
+  }
+
+  .middle-dashboard-column {
+    grid-column: 2;
+  }
+
+  .budget-overview {
+    grid-column: 1 / -1;
+  }
+
+  .nav {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sidebar {
+    display: none;
+  }
+
+  body > #navbar,
+  body > #summary-cards,
+  body > #dashboard,
+  body > #dashboard-details {
+    width: 100%;
+    margin: 0;
+  }
+
+  .container {
+    width: 100%;
+    padding-inline: 12px;
+  }
+
+  #navbar {
+    padding: 12px 0 16px;
+  }
+
+  .nav {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  .right-nav {
+    grid-template-columns: 42px minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+
+  .right-nav-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+  }
+
+  .right-nav-icon img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .right-nav-content h1 {
+    font-size: 20px;
+  }
+
+  .right-nav-content p {
+    font-size: 11px;
+  }
+
+  .nav-span {
+    margin-right: 0;
+    padding: 5px 7px;
+    font-size: 10px;
+  }
+
+  .left-icons {
+    grid-template-columns: 36px 36px minmax(0, 1fr);
+    gap: 7px;
+  }
+
+  .icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .profile {
+    grid-template-columns: minmax(0, 1fr) 32px;
+    gap: 6px;
+    padding: 6px 7px;
+  }
+
+  .profile img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .profile h4 {
+    font-size: 11px;
+  }
+
+  .profile h6 {
+    font-size: 9px;
+  }
+
+  #summary-cards {
+    padding: 0 0 14px;
+  }
+
+  .cards-parent {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .cards {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .cards h1,
+  .cards h2 {
+    font-size: 25px;
+  }
+
+  #dashboard {
+    padding: 0 0 16px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .transactions,
+  .right-widgets {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .panel {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .panel-header {
+    margin-bottom: 14px;
+    gap: 8px;
+  }
+
+  .panel-header h2 {
+    font-size: 15px;
+  }
+
+  .transactions-table {
+    min-width: 620px;
+  }
+
+  .activity-card {
+    grid-template-columns: 30px minmax(0, 1fr) auto;
+    gap: 7px;
+    padding: 11px 8px;
+  }
+
+  .activity-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .activity-content h4 {
+    font-size: 11px;
+  }
+
+  .activity-content p,
+  .activity-content span {
+    font-size: 9px;
+  }
+
+  .bills-grid {
+    gap: 8px;
+  }
+
+  .bill-card {
+    padding: 11px 5px;
+  }
+
+  .bill-total h3 {
+    font-size: 23px;
+  }
+
+  #dashboard-details {
+    padding-bottom: 18px;
+  }
+
+  .lower-dashboard-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .payment-methods,
+  .middle-dashboard-column,
+  .budget-overview {
+    grid-column: 1;
+  }
+
+  .middle-dashboard-column {
+    gap: 12px;
+  }
+
+  .bank-card {
+    min-height: 165px;
+    padding: 17px;
+  }
+
+  .account-row {
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .account-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .account-row > b {
+    grid-column: 2;
+    white-space: normal;
+    font-size: 11px;
+  }
+
+  .budget-item {
+    grid-template-columns: 32px minmax(0, 1fr) auto;
+    gap: 7px;
+    padding: 9px;
+  }
+
+  .budget-item-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .budget-item-copy small {
+    white-space: normal;
+  }
+}
